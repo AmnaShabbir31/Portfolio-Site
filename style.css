@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:ital@1&family=Sansita&display=swap');
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Sansita', Montserrat;
+}
+
+section{
+	min-height: 100vh;
+}
+
+nav{
+	display: flex;
+	justify-content: flex-end;
+}
+
+li{
+	font-size: 20px;
+	font-weight: 500;
+	color: black;
+	text-decoration: none;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+}
+
+.nav-links a:hover{
+	color: #40739e;
+}
+
+button{
+	  font-family: 'Sansita', Montserrat;
+	  background: #40739e;
+	  border: 1px solid black;
+	  border-radius: 12px;
+	  color: black;
+	  cursor: pointer;
+	  display: inline-block;
+	  font-size: 16px;
+	  font-weight: 500;
+	  line-height: 2.5;
+	  padding: 0 1rem;
+	  text-align: center;
+	  transition: all 500ms ease;
+}
+
+button:hover{
+	color:#40739e ;
+	background: black;
+	transform: skew(-5deg);
+}
+
+svg{
+	height: 30px;
+	width: 30px;
+	fill: white;
+}
+
+svg:hover{
+	fill: #40739e;
+}
+
+.home{
+	background-image: -webkit-linear-gradient(100deg, #40739e 15%, #c8d6e5 35%);
+	/*background-size:100%;
+	background-repeat: repeat-y;
+    background-attachment: fixed;*/
+}
+
+.nav-links{
+	margin-top: 0px;
+	background-color: rgba(0, 0, 0, 0.7);
+	width: 100%;
+	height: 58px;
+	position: fixed;
+	list-style: none;
+	display: flex;
+	justify-content: flex-end;
+}
+
+#nav-list.show{
+	margin-top: 100px;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+.nav-links li{
+	margin-top: 17px;
+	display: inline-block;
+	padding: 0px 20px;
+	cursor: pointer;
+}
+
+.home-area{
+	margin-top: 200px;
+	display: flex;
+	flex-direction: column;
+	height: 90%;
+	justify-content: center;
+}
+
+.home-text{
+	margin-left: 80px;
+	margin-bottom: 90px;
+}
+
+h1{
+	font-size: 70px;
+	color: black;
+}
+
+h1:hover{
+	-webkit-text-stroke: 2px black;
+	color: transparent;
+}
+
+hr{
+	color: black;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.home-text p{
+	font-size: 30px;
+}
+
+.home-area a:hover{
+	color:#1dd1a1;
+}
+
+.aboutMe {
+	display: flex;
+	justify-content: space-around;
+	background:#ecf0f1;
+}
+
+.aboutMe h4{
+ font-size: 50px;
+ color:#a29bfe; 
+ font-size:30px;
+}
+
+.aboutMe h2{
+	color: black;
+	font-size: 35px;
+}
+
+ .aboutMe h3{
+ 	color: red;
+ 	font-size: 35px;
+ }
+
+
+.aboutMe p{
+ font-size: 20px;
+ line-height: 2.5;
+}
+
+.about-text{
+	margin-left: 100px;
+}
+
+
+.about-text a{
+	color: #6c5ce7;
+}
+.about-text a:hover{
+	color: #1dd1a1;
+}
+
+.container-icons{
+	  text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.container-icons .box-icon{
+	 width: 10%;
+   height: 142px;
+   margin-bottom: -15px;
+}
+
+.projects{
+	background: #dfe6e9;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.projects-container{
+	display: flex;
+	justify-content: space-around;
+}
+
+.project-card{
+	background-color: #dfe6e9;
+	width: 300px;
+	height: 550px;
+	border-radius: 20px;
+	box-shadow: 10px 20px 40px grey;
+	transition: 0.9s;
+}
+
+.project-card:hover{
+	transform:scale(1.13);
+	z-index: 2;
+}
+
+.project-card svg{
+	fill: black;
+}
+
+.project-card h3{
+	color: black;
+	text-transform: uppercase;
+	font-family: 'Sansita';
+}
+.project-card p{
+	color: black;
+}
+
+.project-image{
+	margin-top: 7px;
+	width: 300px;
+	height: 280px;
+	border-radius: 13px;
+}
+
+.contactMe{
+	background-color: #c8d6e5;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.contactMe h1{
+	margin-bottom: 0;
+}
+.contactMe .fa-brands{
+	color: black;
+	padding: 10px;
+}
+.contactMe .fa-brands:hover{
+	color: #40739e;
+}
+
+form{
+	margin-top: 0;
+	padding-top: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 90%;
+	gap: 2.5rem;
+}
+
+input, textarea{
+	font-family: 'Sansita', Montserrat;;
+	width: 45%;
+	padding: 10px;
+	outline: 0;
+	border: 2px solid black;
+	box-shadow: 5px 5px#40739e;
+	border-radius: 1px;
+	color: black;
+	font-size: 15px;
+}
+
+ textarea{
+ 	height: 139px;
+ }
+
+.footer p{
+	text-align: center;
+	background-color:  #40739e;
+	padding: 8px;
+	margin: 0;
+}
+
+
+.hamburger{
+	display: none;
+}
+
+@media only screen and (max-width: 1000px){
+	.home .hamburger{
+		display: block;
+		border: 0;
+		background: transparent;
+		color: white;
+		font-size: 23px;
+		margin: 10px;
+		padding: 0;
+		align-self: flex-end;
+	}
+	.hamburger:hover{
+		color: #40739e;
+	}
+	.home ul{
+		display: none;
+		flex-direction: column;
+		margin: 0px;
+	}
+	.home nav{
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	.nav-links{
+		background-color: transparent;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+    .projects-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-grow: 0;
+    }
+    .about-text{
+    	margin-left: 35px;
+    }
+    .contactMe h1{
+		margin-top: 60px;
+		font-size: 40px;
+		}
+		.contactMe form{
+			width: 130%;
+		}
+		.contactMe h4{
+			font-size: 12px;
+		}
+		.contactMe form{
+			gap: 2rem;
+		}
+		.project-card{
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+		.home-area h1{
+		font-size: 40px;
+		}
+		.home-area p{
+			font-size: 18px;
+		}
+		.container-icons .box-icon{
+			padding: 20px;
+		}
+}
